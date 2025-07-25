@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 56px;
+  padding: 0 16px;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.left,
+.center,
+.right {
+  display: flex;
+  align-items: center;
+}
+
+.left {
+  gap: 16px;
+}
+
+.menu-icon {
+  width: 24px;
+  cursor: pointer;
+}
+
+.logo {
+  width: 90px;
+}
+
+.center {
+  flex: 1;
+  justify-content: center;
+  gap: 4px;
+}
+
+.search {
+  width: 45%;
+  padding: 6px 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 2px 0 0 2px;
+}
+
+.search-btn {
+  padding: 2px 5px;
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  border-left: none;
+  cursor: pointer;
+  border-radius: 0 2px 2px 0;
+}
+
+.right {
+  gap: 16px;
+}
+
+.icon {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+main.watch-page {
+  display: flex;
+  gap: 24px;
+  padding: 24px;
+}
+
+.video-player {
+  flex: 2;
+}
+
+.video-frame {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background-color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: #555;
+  margin-bottom: 16px;
+}
+
+.video-stats {
+  color: #606060;
+  font-size: 0.9rem;
+  margin-top: 4px;
+  margin-bottom: 12px;
+}
+
+.video-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.channel-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.channel-logo {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.channel-details p {
+  color: #606060;
+  font-size: 0.85rem;
+}
+
+.subscribe-btn {
+  background-color: red;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 16px;
+}
+
+.buttons {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.action-btn {
+  background-color: #f0f0f0;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.header-btn {
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.action-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.video-description {
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.5;
+}
+
+.suggestions {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
